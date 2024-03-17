@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import InputField from '../Component/InputField';
 import { NoteModel } from '../Model/NoteModel';
 import NoteList from '../Component/NoteList';
-
+import '../Styling.css'
 const Home:React.FC = () => {
     const [Note,setNote]= useState<string>("");
     const [Notes, setNotes]=useState<NoteModel[]>([])

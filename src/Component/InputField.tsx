@@ -9,14 +9,15 @@ interface props {
 const InputField= ({Note,setNote,handleAdd}:props) => {
 
   return (
-    <div>
-        <form action="submit" onSubmit={handleAdd}>
+    <div className='InputDiv w100vw h-[80px] m-10 relative'>
+        <form  action="submit" onSubmit={handleAdd}>
             <input type="text"
              placeholder='Enter Notes here'
              value={Note} 
              onChange={(e)=>setNote(e.target.value)}
+             className='input_field w-[90vw] h-[80px]  pl-5'
               />
-              <button type="submit">Save</button>
+              <button className='input_btn text-white' type="submit">Save</button>
         </form>
     </div>
   )
